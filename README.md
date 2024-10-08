@@ -34,9 +34,7 @@ little JavaScript.
 
 ## Getting Started
 
-First, let's get the JSON server up and running in the background. From inside
-this assignment's local directory, run `json-server --watch db.json` to start
-the JSON server. In your browser, you can verify the server is running by
+First, let's get the JSON server up and running in the background. From inside this assignment's local directory, run `json-server --watch db.json` to start the JSON server. In your browser, you can verify the server is running by
 navigating to `http://localhost:3000/movies` to see the API data.
 
 Leave the server running for now. Open a second terminal window and navigate to
@@ -162,7 +160,7 @@ to do something else instead. We can confirm everything is working by adding a
 ```js
 inputForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log(event);
+  console.log(event.target.children);
 });
 ```
 
